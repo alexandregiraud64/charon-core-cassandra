@@ -1,8 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 
+  <parent>
+    <groupId>com.agiraud.charon</groupId>
+    <artifactId>charon</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.agiraud.charon</groupId>
   <artifactId>charon-core-cassandra</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
+  <packaging>jar</packaging>
+  
   <name>Charon Core Cassandra</name>
+  <url>http://maven.apache.org</url>
+ 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+ 
+  <dependencies>
+    <dependency>
+      <groupId>com.agiraud.charon</groupId>
+      <artifactId>charon-core</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-cassandra</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.data</groupId>
+      <artifactId>spring-data-cassandra</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.security.oauth.boot</groupId>
+      <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+      <version>2.1.8.RELEASE</version>
+    </dependency>
+  </dependencies>
+  
 </project>
